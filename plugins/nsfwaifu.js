@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
 handler.help = ['waifunsfw']
 handler.tags = ['hentai']
 handler.command = /^(waifunsfw)$/i
-
-handler.limit = true
+handler.premium = true
+handler.limit = 50
 
 module.exports = handler
