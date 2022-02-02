@@ -9,13 +9,13 @@ let handler = async (m, { conn }) => {
     let uptime = clockString(_uptime)
 
     let str = `
-┌─〔 Info RadBotZ 〕
-│Name: RadBotZ
-│Main Owner: Raditya
+┌─〔 Info AlyaaXzy Botz 〕
+│Name: AlyaaXzy
+│Main Owner: AlyaaXzy
 │Operated Since: 19 September 2021
 │Language Used: Nodejs (JS)
 │Server: Heroku
-│SC: _github.com/Drz103/RadBot.git_
+│SC: -
 └────
 
 ┌─〔 Status 〕
@@ -40,7 +40,7 @@ let handler = async (m, { conn }) => {
 ├ ${jadibot ? '✅' : '❌'} *Jadi Bot*
 ├ ${nsfw ? '✅' : '❌'} *Mode Nsfw*
 └────`.trim()
-     await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), str, '©RadBotZ ⁩×͜×', 'Owner', '.owner', 'Menu', '.menu', m)
+     await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), str, '©AlyaaXzy ', 'Owner', '.owner', 'Menu', '.menu', m)
 }
 handler.help = ['botstatus']
 handler.tags = ['info']
