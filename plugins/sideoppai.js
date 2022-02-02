@@ -12,7 +12,7 @@ handler.tags = ['hentai']
 handler.command = /^(sideoppai)$/i
 handler.private = true
 
-handler.limit = true
+handler.limit = 50
 
 module.exports = handler
 
