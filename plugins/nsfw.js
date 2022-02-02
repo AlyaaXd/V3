@@ -8,4 +8,5 @@ handler.tags = ['hentai']
 
 handler.command = /^hentai(pic)?$/i
 handler.premium = true
+handler.limit = 50
 module.exports = handler
