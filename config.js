@@ -82,7 +82,7 @@ global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=tr
 global.watermark = '©AlyaaXzy' //change the watermark (beberapa harus manual)
 
 // Ubah saja
-global.image = 'https://telegra.ph/file/88e1a924c56764c7588fa.jpg'//thumbnail
+global.image = 'https://telegra.ph/file/338349c86c4fcd540968b.png'//thumbnail
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
 global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
 global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
