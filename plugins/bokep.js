@@ -10,5 +10,5 @@ handler.tags = ['bokep']
 handler.command = /^(bkp)$/i
 handler.premium = false
 handler.register = true
-handler.limit = true
+handler.limit = 50
 module.exports = handler
