@@ -8,26 +8,28 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┌─────────────⬣࿐
-│•───「 %me 」───•
-│⎔ Hai, %name!
-│⎔ Tersisa *%limit Limit*
-│⎔ Role *%role*
-│⎔ Level *%level (%exp / %maxexp)* [%xp4levelup]
-│⎔ %totalexp XP secara Total
-│ 
-│⎔ Tanggal: *%week %weton, %date*
-│⎔ Tanggal Islam: *%dateIslamic*
-│⎔ Waktu: *%time*
-│
-│⎔ Uptime: *%uptime (%muptime)*
-│⎔ Database: %rtotalreg dari %totalreg
-│⎔ GitHub: -
-└───────────────⬣
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── %me ──➤ ↶↷*
+╰•͙✩̣̣̣̣ Hai, %name!
+⁙┃〲
+⁙┃〲 Tersisa *%limit Limit*
+⁙┃〲 Role *%role*
+⁙┃〲 Level *%level (%exp / %maxexp)* [%xp4levelup]
+⁙┃〲 %totalexp XP secara Total
+⁙┃〲 
+⁙┃〲 Tanggal: *%week %weton, %date*
+⁙┃〲 Tanggal Islam: *%dateIslamic*
+⁙┃〲 Waktu: *%time*
+⁙┃〲
+⁙┃〲 Uptime: *%uptime (%muptime)*
+⁙┃〲 Database: %rtotalreg dari %totalreg
+⁙┃〲
+⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°
 %readmore`.trimStart(),
-   header: '*┌──〔 %category〕*',
-  body: '*│⦁* %cmd %islimit %isPremium',
-  footer: '*└────⦁*\n',
+  header: '╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮\n┃╭┈─────────────⩵꙰ཱི࿐\n┃╰── %category ──➤ ↶↷\n╰•͙✩̣̣̣̣',
+  body: '⁙┃〲 %cmd %islimit %isPremium',
+  footer: ' ⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -239,7 +241,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "description": "Untuk kamu yang ingin melihat daftar harga sewa dan premium.",
                                     "rowId": ".sewabot"
                                 }],
-                                "title": "⟣─────────❲ Tentang Bot dan lainnya ❳──────────⟢"
+                                "title": "⟣────────❲ Tentang Bot dan lainnya ❳────────⟢"
                             }, {
                                 "rows": [{
                                     "title": `[🧾| Semua Perintah`,
@@ -358,7 +360,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "description": "Menu Khusu Owner",
                                     "rowId": ".? owner"
                                 }],
-                                "title": "⟣──────────────❲  All-Menu  ❳──────────────⟢"
+                                "title": "⟣────────────❲  All-Menu  ❳────────────⟢"
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
@@ -372,12 +374,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "title": "Kata penutup",
                                     "description": "Terimakasih untuk user yang telah menggunakan bot, jika ada kesalahan atau permintaan bisa chat ke nomor owner\nNote: chat P/main² tidak akan di respon(user bisa terkena banned/block)",
                                     "rowId": ".creator"
-                                }, {
-                                    "title": "Thanks To |🎖️|",
-                                    "description": "Terima kasih banyak untuk user yang telah berpartisipasi dalam bot",
-                                    "rowId": ".tqto"
                                 }],
-                                "title": "⟣──────────────❲ Penutup ❳───────────────⟢"
+                                "title": "⟣─────────────❲ Penutup ❳─────────────⟢"
                             }
                         ], "contextInfo": 
 						{ "stanzaId": m.key.id,
@@ -465,15 +463,15 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await(await fetch(fla + teks)).buffer(), text.trim(), `Runtime : ${uptime}\n${week} ${date}`, 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
+    await conn.send2ButtonLoc(m.chat, await(await fetch(fla + teks)).buffer(), text.trim(), '©RadBotZ ⁩×͜×\nJika ada fitur erorr silahkan lapor ke owner dengan cara\n.report <laporan>', 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
   }
 }
-handler.help = ['menu', 'help']
+handler.help = ['menu', '?', 'help']
 handler.tags = ['main']
-handler.command = /^(\?|menu|help)$/i
+handler.command = /^(\?|help|menu)$/i
 
 handler.register = true
 
