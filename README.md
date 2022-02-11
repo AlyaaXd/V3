@@ -1,75 +1,184 @@
-<p align="center">
-<img src="https://telegra.ph/file/63560c3d19d6bcce228f5.jpg" alt="RadBot" width="200"/>
+<div align="center">
+<img src="https://telegra.ph/file/4637101da58e21976363b.jpg" alt="AlyaaXzy X BOTCAHï¿½" width="300" />
 
-
-<p align="center"> <a href="https://Lexxy24.github.io"> <img src="https://readme-typing-svg.herokuapp.com?size=15&width=280&lines=Created+By+Radbotz+Official+🗿" alt="Lexxy Official" /> </a> </p>
-<p align="center">
-<a href="#"><img title="RadBot" src="https://img.shields.io/badge/GANTI SESSIONNYA DULU SEBELUM PAKAI-red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
+<h1 align="center">AlyaaXzy X BOTCAHX</h1>
+
+<h1 align="center">Jangan lupa kasih stars & follow :)</h1>
+
+>
+>
+>
+</div>
 <p align="center">
-</p> 
+  <a href="https://github.com/AlyaaXd"><img title="Author" src="https://img.shields.io/badge/Author-AlyaaXzy.svg?style=for-the-badge&logo=github" /></a>
+  <h4 align="center">
+  <a href="https://github.com/BOTCAHX"><img title="Author" src="https://img.shields.io/badge/Author-BOTCAHX.svg?style=for-the-badge&logo=github" /></a>
+  <h4 align="center">
+  <a
+  <a href="https://wa.me/6289505165400">SC FREE API KOK GAN >//< </a>
+</h4>
+</p>
 
----
-
-# Timdak work di termux!
-
-# Slow respon
-
-## Deploy to heroku
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Drz103/RadBot)
-
-Heroku Buildpack
-```bash 
-> heroku/nodejs 
-> https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest 
-> https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
-```
-
-Tutorial YouTube
-
-[![YouTube](https://img.shields.io/badge/YouTube-Video-red)](https://youtu.be/DzNIL45qHaM)
-
-## settings 
-Edit Nomor Owner DLL `'./config.js'`
-```ts 
-OwnerNumber = ['Nomerlu']
-GithubOwner = ['https://github.com/Drz103']
-GroupOwner = ['https://chat.whatsapp.com/D5IU5pzGDSyE6lAkqqYnvr']
-Apikey? = Apikey kalian, tidak paham? chat saya di wangsaf!
-
-Thumbnail
-global.image = 'https://telegra.ph/file/4f4a5a3cde6a98a96da79.jpg'//change the image
-global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
-global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
-global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
-```
----------
-
-## FOR WINDOWS/VPS/RDP USER
-
-* Download And Install Git [`Click Here`](https://git-scm.com/downloads)
-* Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
-* Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
-* Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
-
+## CARA INSTALL DI TERMUX
 ```bash
-git clone https://github.com/Drz103/RadBot
-cd RadBot
-npm install
-npm update
+> termux-setup-storage
+> pkg update && pkg upgrade
+> pkg install git
+> pkg install nodejs
+> pkg install bash
+> pkg install ffmpeg
+> pkg install libwebp
+> git clone https://github.com/AlyaaXd/R-Txyz-Botz
+> cd R-Txyz-Botz
+> npm i
+> node run.js
+# Untuk Sdcard (File Sudah Di Download)
+> cd /sdcard
+> cp -r R-Txyz-Botz $HOME
+> cd R-Txyz-Botz
+> npm i
+> node run.js
+```
+
+# Run On Heroku
+
+Simple WhatsApp Bot
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AlyaaXd/Haruno-Botz)
+
+
+
+# Ambil [seesion.data.json] 
+
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@tioclkp02/ScanQr-botwea-6#index.js?lite=1&outputonly=1#.replit)
+
+
+
+# Heroku Buildpack
+
+| BuildPack | LINK |
+|--------|--------|
+| **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
+| **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+| **Node.js [salin]**     | heroku/nodejs|
+
+
+# THANKS TO 
+ [`Baileys`](https://github.com/adiwajshing/Baileys)
+
+ [`AlyaXzy`](https://wa.me/6289505165400)
+
+ [`BOTCAHX`](https://wa.me/6282221792667)
+
+# Hargai Kami Dengan Menambahkan Kredit ( Wm ) 
+
+~ Selamat Memakai~
+
+
+### AlyaaXd stat
+![Ra Github stat](https://github-readme-stats.vercel.app/api?username=AlyaaXd&theme=midnight-purple&show_icons=true) 
+
+![Ra Github troppy](https://github-profile-trophy.vercel.app/?username=AlyaaXd&theme=monokai)
+
+![Ra Github languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AlyaaXd&theme=tokyonight)
+
+
+### BOTCAHX stat
+![Ra Github stat](https://github-readme-stats.vercel.app/api?username=BOTCAHX&theme=midnight-purple&show_icons=true) 
+
+![Ra Github troppy](https://github-profile-trophy.vercel.app/?username=BOTCAHX&theme=monokai)
+
+![Ra Github languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BOTCAHX&theme=tokyonight)
+
+
+## Arguments `node . [--options] [<session name>]`
+
+#### Contoh: `node . --self --restrict --autoread`
+
+### `--self`
+
+Aktifkan mode self (Mengabaikan yang lain)
+
+### `--prefix <prefixes>`
+
+* `prefixes` dipisahkan oleh masing-masing karakter
+Setel awalan
+
+### `--server`
+
+Digunakan untuk [heroku](https://heroku.com/) atau pindai melalui situs web
+
+### `--db <json-server-url>`
+
+Gunakan db eksternal alih-alih db lokal, 
+Contoh Server `https://json-server.tioclkp.repl.co/`
+Code: `https://repl.it/@addserver/json-server`
+
+`node . --db 'https://json-server.tioclkp.repl.co/'`
+
+Server harus memiliki spesifikasi seperti ini
+
+#### GET
+
+```http
+GET /
+Accept: application/json
+```
+
+#### POST
+
+```http
+POST /
+Content-Type: application/json
+
+{
+ data: {}
+}
+```
+
+### `--big-qr`
+
+Jika qr unicode kecil tidak mendukung
+
+### `--restrict`
+
+Mengaktifkan plugin terbatas (yang dapat menyebabkan nomor Anda **diblokir** jika digunakan terlalu sering)
+
+* Administrasi Grup `add, kick, promote, demote`
+
+### `--img`
+
+Aktifkan pemeriksa gambar melalui terminal
+
+### `--autoread`
+
+Jika diaktifkan, semua pesan masuk akan ditandai sebagai telah dibaca
+
+### `--nyimak`
+
+Tidak ada bot, cukup cetak pesan yang diterima dan tambahkan pengguna ke database
+
+### `--test`
+
+**Development** Testing Mode
+
+### `--trace`
+
+```js
+conn.logger.level = 'trace'
+```
+
+### `--debug`
+
+```js
+conn.logger.level = 'debug'
 ```
 
 ---------
 
-## Run
+ [![AlyaXd](https://github.com/AlyaaXd.png?size=100)](https://github.com/AlyaaXd) | [![BOTCAHX](https://github.com/BOTCAHX.png?size=100)](https://github.com/BOTCAHX)
+----|----
+[AlyaXd](https://github.com/AlyaaXd) | [BOTCAHX](https://github.com/BOTCAHX)
+ Creator | Creator
 
-```bash
-node .
-```
-
----------
-
-# My Sosial 
-- [Group ](https://chat.whatsapp.com/D5IU5pzGDSyE6lAkqqYnvr) 
-- [Whatsapp ](https://wa.me/62858929626673)
