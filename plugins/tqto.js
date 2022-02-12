@@ -7,24 +7,11 @@ BIG THANKS TO
 •Nurutomo
 •Adiwajshing
 •Ariffb
-•Amel
-•IrwanX
-•Dawnfrosty
 •Rteam1
-•Beniismael
-•Raditya (gua)
-•Furqan
-•Elyas
-•Rasel
+•AlyaaXzy
+•BOTCAHX (Tio)
+•Raditya
 •Xteam
-•khael
-•Atenabot
-•Baka Botz
-•ZeeoneOfc
-•Zeks
-•Rendycraft  
-•Nadin
-•Aca Mirabel
 •Penyedia Layanan API
 •Orang-orang yang Berdonasi
 `.trim(), watermark, 'Back', '.menu')
