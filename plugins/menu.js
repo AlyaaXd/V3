@@ -8,8 +8,8 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-*┌────〔 %me 〕────➤*
-*│* Hai, %name!
+*┌─〔 %me 〕──➤*
+*│*⦁ Hai, %name!
 *│*⦁ Tersisa *%limit Limit*
 *│*⦁ Role *%role*
 *│*⦁ Level *%level (%exp / %maxexp)* [%xp4levelup]
@@ -22,11 +22,11 @@ const defaultMenu = {
 *│*⦁ Uptime: *%uptime (%muptime)*
 *│*⦁ Database: %rtotalreg dari %totalreg
 *│*⦁ GitHub: https://github.com/AlyaaXd
-*└───────────────────•*
+*└─────────────➤*
 %readmore`.trimStart(),
   header: '*┌─〔 %category 〕*',
   body: '*│▸* %cmd %islimit %isPremium',
-  footer: '*└────*\n',
+  footer: '*└────➤*\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
