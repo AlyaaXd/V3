@@ -1,19 +1,14 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn }) => {
-    let { anon, anticall, antispam, antitroli, backup, jadibot, groupOnly, nsfw } = global.db.data.settings[conn.user.jid]
-    const chats = conn.chats.all()
-    const groups = chats.filter(v => v.jid.endsWith('g.us'))
-    let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
+let handler = async (m, { usedPrefix, command }) => {
+let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime)
+let time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
+let runnya = `
+*───「 RUNTIME BOT 」───*
 
-    let _uptime = process.uptime() * 1000
-    let uptime = clockString(_uptime)
-
-    let str = ` 
-     *「 RUNTIME BOT 」*
 Time : ${time}
 Runtime : ${uptime}
-`.trim()
-     await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), str, '© AlyaaXzy ⁩', 'Owner', '.owner', 'Menu', '.menu', m)
+`
+conn.sendButton(m.chat, runnya, watermark, 'Menu', '.menu', m) 
 }
 handler.help = ['runtime']
 handler.tags = ['info']
