@@ -2,12 +2,8 @@
 // thank you to ALLAH Swt
 // thank you to Nurutomo as wabot-aq
 // thank you to ariffb as stikerinbot
-// thank you to botstylee
-// thank you to bochilgaming as games-wabot
-// thank you to benni ismael
-// thank you to zerochanBot
-// thank you to fernazer
-// thank you to MikeBot Dev Team
+// thank you to AlyaaXzy
+// thank you to TioXzy
 // thank you to ALL Bot creator
 // and thanks you to who support my Bot
 let fs = require('fs')
@@ -83,19 +79,15 @@ global.watermark = '© R-Txzy' //change the watermark
 global.image = 'https://telegra.ph/file/0bdd84bd5a8099a789828.jpg' //change the image
 global.thumbfoto = 'https://telegra.ph/file/0bdd84bd5a8099a789828.jpg'
 
-// Ubah saja
-global.image = 'https://telegra.ph/file/2848948d64ea43302c882.png'//thumbnail
+// image
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
 global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
 global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
 global.thanks = 'https://telegra.ph/file/01917f7782b70de8f418d.jpg'
 
-// tingkat kesulitan, semakin tinggi semakin susah
-global.multiplier = 500 // The higher, The harder levelup
+global.multiplier = 9999999 // Semakin tinggi, semakin sulit naik level
 
-//*****************PEMBATAS*********************
-// JANGAN DI GANTI NTAR KLO GABISA JAN TANYA GW
-
+let chalk = require('chalk')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
   fs.unwatchFile(file)
