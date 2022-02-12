@@ -80,11 +80,11 @@ global.eror = '_*Error*_'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 global.watermark = '© R-Txzy' //change the watermark 
-global.image = 'https://telegra.ph/file/ae60c29d9e1b4e159f90f.jpg' //change the image
-global.thumbfoto = 'https://telegra.ph/file/ae60c29d9e1b4e159f90f.jpg'
+global.image = 'https://telegra.ph/file/0bdd84bd5a8099a789828.jpg' //change the image
+global.thumbfoto = 'https://telegra.ph/file/0bdd84bd5a8099a789828.jpg'
 
 // Ubah saja
-global.image = 'https://telegra.ph/file/ae60c29d9e1b4e159f90f.jpg
+global.image = 'https://telegra.ph/file/338349c86c4fcd540968b.png'//thumbnail
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
 global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
 global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
