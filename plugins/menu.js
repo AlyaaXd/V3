@@ -33,14 +33,9 @@ ${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
-	let { anon, anticall, antispam, antitroli, backup, jadibot, groupOnly, nsfw } = global.db.data.settings[conn.user.jid]
-    let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
-
-    let _uptime = process.uptime() * 1000
-    let uptime = clockString(_uptime)
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'edukasi', 'news', 'nsfw', 'xp', 'stiker', 'image', 'anime', 'kerangajaib', 'quotes', 'admin', 'rpg', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'vote', 'tanpakategori', 'owner']
+  let arrayMenu = ['all', 'game', 'edukasi', 'news', 'nsfw', 'xp', 'stiker', 'image', 'cristian', 'anime', 'kerangajaib', 'quotes', 'admin', 'rpg', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'vote', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
@@ -63,6 +58,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'nulis': 'MagerNulis & Logo',
     'downloader': 'Downloader',
     'tools': 'Tools',
+    'cristian': 'cristian',
     'fun': 'Fun',
     'database': 'Database',
     'vote': 'Voting',
@@ -100,6 +96,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'quotes') tags = {
     'quotes': 'Quotes'
+  }
+  if (teks == 'cristian') tags = {
+    'cristian': 'Cristian'
   }
   if (teks == 'admin') tags = {
     'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`
@@ -219,7 +218,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `©AlyaaXzy`.trim(),
+                        "description": `© *R-Txzy*`.trim(),
                         "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
                         "buttonText": "*Click Here*",
                         "listType": "SINGLE_SELECT",
@@ -236,7 +235,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                 }, {
                                     "title": "Sewa bot - Premium",
                                     "description": "Untuk kamu yang ingin melihat daftar harga sewa dan premium.",
-                                    "rowId": ".sewabot"
+                                    "rowId": ".sewa"
                                 }],
                                 "title": "⟣─────────❲ Tentang Bot dan lainnya ❳──────────⟢"
                             }, {
@@ -248,7 +247,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "title": "|🕋| Islam",
                                     "description": "Menu Tentang Islam",
                                     "rowId": ".? quran"
-                                }, { 
+                                }, {
+                                    "title": "|⛪| Cristian",
+                                    "description": "Menu Tentang Kristen",
+                                    "rowId": ".? cristian"
+                                }, {
                                     "title": "|🏫| Edukasi",
                                     "description": "Menu Edukasi",
                                     "rowId": ".? edukasi"
@@ -361,7 +364,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik AlyaaXzy",
+                                    "description": "pemilik R-Txzy",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
@@ -405,6 +408,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     // ├ ${_p + command} downloader
     // ├ ${_p + command} tools
     // ├ ${_p + command} fun
+    // ├ ${_p + command} cristian
     // ├ ${_p + command} database
     // ├ ${_p + command} vote
     // ├ ${_p + command} quran
@@ -464,17 +468,26 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await(await fetch(fla + teks)).buffer(), text.trim(), `Runtime : ${uptime}\n${week} ${date}`, 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(thumbfoto)).buffer(), text.trim(), watermark, 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
   }
 }
-handler.help = ['menu', 'help']
+handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(\?|menu|help)$/i
+handler.command = /^(menu|help|\?)$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
 
-handler.register = true
+handler.admin = false
+handler.botAdmin = false
+
+handler.fail = null
+handler.exp = 3
 
 module.exports = handler
 
@@ -489,18 +502,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari🌃"
+  res = "Selamat dinihari🌌"
   if (time >= 4) {
-    res = "Selamat pagi🌄"
+    res = "Selamat pagi🌅"
   }
   if (time > 10) {
-    res = "Selamat siang🌄"
+    res = "Selamat siang🏙️"
   }
   if (time >= 15) {
     res = "Selamat sore🌇"
   }
   if (time >= 18) {
-    res = "Selamat malam🌉"
+    res = "Selamat malam🌃"
   }
   return res
 }
