@@ -2,14 +2,18 @@
 // thank you to ALLAH Swt
 // thank you to Nurutomo as wabot-aq
 // thank you to ariffb as stikerinbot
-// thank you to AlyaaXzy
-// thank you to TioXzy
+// thank you to botstylee
+// thank you to bochilgaming as games-wabot
+// thank you to benni ismael
+// thank you to zerochanBot
+// thank you to fernazer
+// thank you to MikeBot Dev Team
 // thank you to ALL Bot creator
 // and thanks you to who support my Bot
 let fs = require('fs')
 let chalk = require('chalk')
 
-global.linkGC = ['https://chat.whatsapp.com/HJ9pD2XJ8vq7whuAYOvT1Y', 'https://chat.whatsapp.com/HJ9pD2XJ8vq7whuAYOvT1Y', 'https://chat.whatsapp.com/HJ9pD2XJ8vq7whuAYOvT1Y'] // ganti jadi group lu
+global.linkGC = ['https://chat.whatsapp.com/EVCGfzxLWfp81n0WhmVklH', 'https://chat.whatsapp.com/FnNAbem8o6r4pgLhSdO8Q9', 'https://chat.whatsapp.com/HBhy7rVae3o0PkIfkhvs2N'] // ganti jadi group lu
 global.owner = ['+1 (775) 403-5736', '6289505165400', '6285730903853'] // Masukan nomot kalian
 global.mods = ['+1 (775) 403-5736', '6289505165400'] // Moderator
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
@@ -79,15 +83,19 @@ global.watermark = '© R-Txzy' //change the watermark
 global.image = 'https://telegra.ph/file/ae60c29d9e1b4e159f90f.jpg' //change the image
 global.thumbfoto = 'https://telegra.ph/file/ae60c29d9e1b4e159f90f.jpg'
 
-// image
+// Ubah saja
+global.image = 'https://telegra.ph/file/ae60c29d9e1b4e159f90f.jpg
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
 global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
 global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
 global.thanks = 'https://telegra.ph/file/01917f7782b70de8f418d.jpg'
 
-global.multiplier = 9999999 // Semakin tinggi, semakin sulit naik level
+// tingkat kesulitan, semakin tinggi semakin susah
+global.multiplier = 500 // The higher, The harder levelup
 
-let chalk = require('chalk')
+//*****************PEMBATAS*********************
+// JANGAN DI GANTI NTAR KLO GABISA JAN TANYA GW
+
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
   fs.unwatchFile(file)
