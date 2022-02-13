@@ -3,8 +3,8 @@ let handler = async (m, { conn, text }) => {
   let ext= `
 ┌─〔 GRUB BOT 〕
 │ 
-├➥ *✗Link grub bot by raditya*
-│https://chat.whatsapp.com/D5IU5pzGDSyE6lAkqqYnvr
+├➥ *Link grub bot by R-Txzy*
+│https://chat.whatsapp.com/HJ9pD2XJ8vq7whuAYOvT1Y
 ├➥ *Yang ada Bot Boleh*
 │   *masukin ke grub✅*
 ├➥ *Admin Selalu Benar✅*
@@ -13,7 +13,7 @@ let handler = async (m, { conn, text }) => {
 ├➥ *Sebelum Bergabung Baca*
 │   *Rules Terlebih dahulu❗*
 │
-├➥*©GRUB-BOT 2021*
+├➥*©GRUP-BOTZ 2021*
 └─「 *BOT* 」
 
 `.trim()
