@@ -8,7 +8,7 @@ handler.help = ['bkp']
 handler.tags = ['bokep']
 
 handler.command = /^(bkp)$/i
-handler.premium = false
+handler.premium = true
 handler.register = true
 handler.limit = 50
 module.exports = handler
