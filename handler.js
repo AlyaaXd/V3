@@ -195,7 +195,7 @@ module.exports = {
             anakanjing: 0,
             makananpet: 0,
             antispam: 0,
-            antispamlastclaim: 0,
+            antispamlastclaim: 5,
             kayu: 0,
             batu: 0,
             string: 0,
@@ -222,15 +222,15 @@ module.exports = {
             age: -1,
             regTime: -1,
             autolevelup: true,
-            lastIstigfar: 0,
+            lastIstigfar: 5,
         }
 
         let chat = global.db.data.chats[m.chat]
         if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
         if (chat) {
           if (!('isBanned' in chat)) chat.isBanned = false
-          if (!('welcome' in chat)) chat.welcome = false
-          if (!('detect' in chat)) chat.detect = false
+          if (!('welcome' in chat)) chat.welcome = true
+          if (!('detect' in chat)) chat.detect = true
           if (!('sWelcome' in chat)) chat.sWelcome = ''
           if (!('sBye' in chat)) chat.sBye = ''
           if (!('sPromote' in chat)) chat.sPromote = ''
@@ -241,11 +241,11 @@ module.exports = {
           if (!('stiker' in chat)) chat.stiker = false
           if (!('rpg' in chat)) chat.delete = true
           if (!('nsfw' in chat)) chat.delete = false
-          if (!('antiLink' in chat)) chat.antiLink = false
+          if (!('antiLink' in chat)) chat.antiLink = true
           if (!('viewonce' in chat)) chat.viewonce = true
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
-          welcome: false,
+          welcome: true,
           detect: false,
           sWelcome: '',
           sBye: '',
@@ -257,7 +257,7 @@ module.exports = {
           rpg: true,
           nsfw: false,
           antiBadword: true,
-          antiLink: false,
+          antiLink: true,
           viewonce: true,
         }
         
