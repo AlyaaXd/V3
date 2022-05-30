@@ -4,7 +4,7 @@ let info = `
 Hai Kak ${ye} Bot ini Menggunakan Sc dari\n https://youtu.be/JYW64CaSjbo \n Developer AlyaaXzy X BOTCAHX
 `.trim()
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*${global.packname}*`, 'status@broadcast') 
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*${global.packname}*`, 'ArullBotz@broadcast') 
 }
 handler.help = ['github']
 handler.tags = ['info']
