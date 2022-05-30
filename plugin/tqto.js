@@ -11,6 +11,7 @@ BIG THANKS TO
 •AlyaaXzy
 •BOTCAHX (Tio)
 •Raditya
+•ArullWara
 •Xteam
 •Penyedia Layanan API
 •Orang-orang yang Berdonasi
