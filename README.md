@@ -1,8 +1,8 @@
 <div align="center">
-<img src="https://telegra.ph/file/4637101da58e21976363b.jpg" alt="AlyaaXzy X BOTCAHï¿½" width="300" />
+<img src="https://telegra.ph/file/4637101da58e21976363b.jpg" alt="Arull X BOTCAHï¿½" width="300" />
 
 </p>
-<h1 align="center">AlyaaXzy X BOTCAHX</h1>
+<h1 align="center">Arull X BOTCAHX</h1>
 
 <h1 align="center">Jangan lupa kasih stars & follow :)</h1>
 
@@ -11,12 +11,12 @@
 >
 </div>
 <p align="center">
-  <a href="https://github.com/AlyaaXd"><img title="Author" src="https://img.shields.io/badge/Author-AlyaaXzy.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/Arullzzz"><img title="Author" src="https://img.shields.io/badge/Author-AlyaaXzy.svg?style=for-the-badge&logo=github" /></a>
   <h4 align="center">
   <a href="https://github.com/BOTCAHX"><img title="Author" src="https://img.shields.io/badge/Author-BOTCAHX.svg?style=for-the-badge&logo=github" /></a>
   <h4 align="center">
   <a
-  <a href="https://wa.me/6289505165400">SC FREE API KOK GAN >//< </a>
+  <a href="https://wa.me/6285822347348">SC FREE API KOK GAN >//< </a>
 </h4>
 </p>
 
