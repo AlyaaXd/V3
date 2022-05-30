@@ -14,8 +14,8 @@ let fs = require('fs')
 let chalk = require('chalk')
 
 global.linkGC = ['https://chat.whatsapp.com/EVCGfzxLWfp81n0WhmVklH', 'https://chat.whatsapp.com/FnNAbem8o6r4pgLhSdO8Q9', 'https://chat.whatsapp.com/HBhy7rVae3o0PkIfkhvs2N'] // ganti jadi group lu
-global.owner = ['6289505165400', '6282221792667', '6285730903853'] // Masukan nomot kalian
-global.mods = ['6289505165400', '6282221792667'] // Moderator
+global.owner = ['6285822347348', '6285822347348', '6285822347348'] // Masukan nomot kalian
+global.mods = ['6285822347348', '6285822347348'] // Moderator
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -54,8 +54,8 @@ global.APIKeys = { // APIKey Here
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = 'Alyaa#'
-  var sticker_author = '©AlyaaXzy'
+  var sticker_name = 'Arull#'
+  var sticker_author = '©Arullbotz'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -79,7 +79,7 @@ global.nsfw = 'Fitur NSFW Dimatikan\nKetik *!enable* *nsfw* untuk menggunakan fi
 global.eror = '_*Error*_'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = '© R-Txzy' //change the watermark 
+global.watermark = '© Arull' //change the watermark 
 global.image = 'https://telegra.ph/file/0bdd84bd5a8099a789828.jpg' //change the image
 global.thumbfoto = 'https://telegra.ph/file/0bdd84bd5a8099a789828.jpg'
 
@@ -91,7 +91,7 @@ global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
 global.thanks = 'https://telegra.ph/file/01917f7782b70de8f418d.jpg'
 
 // tingkat kesulitan, semakin tinggi semakin susah
-global.multiplier = 500 // The higher, The harder levelup
+global.multiplier = 5000// The higher, The harder levelup
 
 //*****************PEMBATAS*********************
 // JANGAN DI GANTI NTAR KLO GABISA JAN TANYA GW
