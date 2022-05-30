@@ -12,7 +12,7 @@ let handler = async (m, { conn }) => {
         global.db.data.users[m.sender].lastclaim = new Date * 1
     } else {
         let buttons = `silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`.trim()
-        conn.send2Button(m.chat, buttons, '©AlyaaXzy', 'Weekly', '#weekly', 'Monthly', '#monthly')
+        conn.send2Button(m.chat, buttons, '©ArullWara', 'Weekly', '#weekly', 'Monthly', '#monthly')
     }
 }
 handler.help = ['claim', 'daily']
